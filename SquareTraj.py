@@ -16,6 +16,10 @@ time.sleep(5)
 print 'taking off'
 drone.take_off(5.0)
 
+#tried these two commands to change the mode to Guided/Hold, but didn't work
+drone.access_request() 
+drone.position_hold() 
+
 print ' going along the setpoints'
 drone.position_set(6.5, 0, 0, relative=True)
 drone.position_set(0, 6.5, 0, relative=True)
