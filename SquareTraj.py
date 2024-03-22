@@ -23,7 +23,7 @@ drone.position_set(-6.5, 0, 0, relative=True)
 drone.position_set(0, -6.5, 0, relative=True)
 
 print 'Landing'
-drone.land(async=True)
+drone.land(async=True) #true to force landing
 
 # shutdown the instance
 drone.disconnect()
